@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "About me"
 author_profile: true
 redirect_from: 
   - /about/
@@ -16,7 +16,7 @@ My research interests include machine learning, computer vision, and artificial 
 ## Contact
 
 - Name: Jiahui Huan
-- Email: YOUR_EMAIL
+- Email: u202240850@xs.ustb.edu.cn
 - Affiliation: University of Science and Technology Beijing
 - Future Affiliation: Beijing Institute of Technology
 - GitHub: [JHHuan](https://github.com/JHHuan)
