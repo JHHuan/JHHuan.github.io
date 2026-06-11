@@ -16,18 +16,19 @@ Education
 
 Research Interests
 ======
+* Robotic Manipulation
+* Imitation Learning
+* 3D Vision & Point Cloud Processing
+* Sim-to-Real Transfer
 * Machine Learning
-* Computer Vision
-* Artificial Intelligence
-* Robotics
 
 Skills
 ======
 * Programming: Python, C/C++, MATLAB
-* Deep Learning Frameworks: PyTorch, TensorFlow
-* Computer Vision: OpenCV
-* Robotics: ROS
-* Tools: Git, LaTeX, Linux
+* Deep Learning: PyTorch, TensorFlow
+* Robotics: MuJoCo, RoboPal, ROS, DemoGen
+* Computer Vision: OpenCV, Point Cloud Processing
+* Tools: Git, LaTeX, Linux, Docker
 
 Publications
 ======
