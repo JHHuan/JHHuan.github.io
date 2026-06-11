@@ -15,7 +15,7 @@ My research interests include **robotic manipulation**, **imitation learning**, 
 
 ## Education
 
-* M.S. in Computer Science (expected), Beijing Institute of Technology, 2026 (expected)
+* M.S. in Robotics Engineering (expected), Beijing Institute of Technology, 2026 (expected)
 * B.S. in University of Science and Technology Beijing, 2022 - 2026
 
 ## Research Interests
