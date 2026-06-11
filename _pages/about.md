@@ -21,4 +21,4 @@ My research interests include machine learning, computer vision, and artificial 
 - Future Affiliation: Beijing Institute of Technology
 - GitHub: [JHHuan](https://github.com/JHHuan)
 
-You can find my CV here: [Jiahui Huan's Curriculum Vitae](../assets/Curriculum_Vitae.pdf).
+You can find my CV here: [Jiahui Huan's Curriculum Vitae](/cv/).
