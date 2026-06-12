@@ -18,4 +18,61 @@ This project implements data-efficient robotic manipulation. Using Robopal simul
 
 **Tech Stack:** Python, PyTorch, MuJoCo, RoboPal, DemoGen, Intel RealSense L515
 
+## Simulation Demos
+
+<style>
+.sim-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  margin: 1em 0;
+}
+.sim-grid .sim-item {
+  text-align: center;
+}
+.sim-grid .sim-item:nth-child(4),
+.sim-grid .sim-item:nth-child(5) {
+  /* center the last row of 2 items */
+}
+.sim-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+.sim-grid .sim-label {
+  font-size: 0.85em;
+  margin-top: 2px;
+  color: #555;
+}
+@media (max-width: 768px) {
+  .sim-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+</style>
+
+<div class="sim-grid">
+  <div class="sim-item">
+    <img src="../images/sim_pick_cube.gif" alt="Pick Cube" />
+    <div class="sim-label">Pick Cube (87%)</div>
+  </div>
+  <div class="sim-item">
+    <img src="../images/sim_stack_cube.gif" alt="Stack Cube" />
+    <div class="sim-label">Stack Cube (79%)</div>
+  </div>
+  <div class="sim-item">
+    <img src="../images/sim_close_box.gif" alt="Close Box" />
+    <div class="sim-label">Close Box (95%)</div>
+  </div>
+  <div class="sim-item">
+    <img src="../images/sim_press_button.gif" alt="Press Button" />
+    <div class="sim-label">Press Button (99%)</div>
+  </div>
+  <div class="sim-item">
+    <img src="../images/sim_assembly.gif" alt="Assembly" />
+    <div class="sim-label">Assembly (80%)</div>
+  </div>
+</div>
+
 [GitHub Repository](https://github.com/JHHuan/Demogen-simulation-project)
