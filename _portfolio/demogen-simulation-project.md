@@ -54,24 +54,24 @@ This project implements data-efficient robotic manipulation. Using Robopal simul
 
 <div class="sim-grid">
   <div class="sim-item">
-    <img src="/images/sim_pick_cube.gif" alt="Pick Cube" />
-    <div class="sim-label">Pick Cube (87%)</div>
-  </div>
-  <div class="sim-item">
     <img src="/images/sim_stack_cube.gif" alt="Stack Cube" />
     <div class="sim-label">Stack Cube (79%)</div>
-  </div>
-  <div class="sim-item">
-    <img src="/images/sim_close_box.gif" alt="Close Box" />
-    <div class="sim-label">Close Box (95%)</div>
   </div>
   <div class="sim-item">
     <img src="/images/sim_press_button.gif" alt="Press Button" />
     <div class="sim-label">Press Button (99%)</div>
   </div>
   <div class="sim-item">
+    <img src="/images/sim_pick_cube.gif" alt="Pick Cube" />
+    <div class="sim-label">Pick Cube (87%)</div>
+  </div>
+  <div class="sim-item">
     <img src="/images/sim_assembly.gif" alt="Assembly" />
     <div class="sim-label">Assembly (80%)</div>
+  </div>
+  <div class="sim-item">
+    <img src="/images/sim_close_box.gif" alt="Close Box" />
+    <div class="sim-label">Close Box (95%)</div>
   </div>
 </div>
 
