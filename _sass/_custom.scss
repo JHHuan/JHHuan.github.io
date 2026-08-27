@@ -144,7 +144,8 @@ html[data-theme="dark"] .masthead {
   background: var(--surface-muted);
 }
 
-.grid__item .archive__item-teaser img {
+.grid__item .archive__item-teaser img,
+.grid__item .archive__item-teaser video {
   height: 100%;
   object-fit: cover;
 }
@@ -178,6 +179,38 @@ html[data-theme="dark"] .masthead {
   transform: scale(1.015);
 }
 
+.robocon-video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  background: var(--surface-muted);
+  border: 1px solid rgba(0, 124, 145, 0.1);
+  border-radius: 14px;
+}
+
+.robocon-video-grid figure {
+  display: block;
+  margin: 0;
+}
+
+.robocon-video-grid video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  background: #111;
+  border-radius: 8px;
+  box-shadow: 0 8px 18px rgba(15, 53, 70, 0.12);
+}
+
+.robocon-video-grid figcaption {
+  margin-top: 0.55rem;
+  color: var(--global-fig-caption-color);
+  font-size: 0.9em;
+  line-height: 1.45;
+}
+
 .page__hero--overlay {
   margin-left: -1rem;
   margin-right: -1rem;
@@ -192,5 +225,14 @@ html[data-theme="dark"] .masthead {
 
   .page__hero--overlay {
     border-radius: 0;
+  }
+
+  .robocon-video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .robocon-video-grid video {
+    max-height: 560px;
+    margin: 0 auto;
   }
 }

@@ -4,8 +4,6 @@ excerpt: "Project lead for an autonomous grain-tracking, grasping, and placement
 collection: portfolio
 permalink: /portfolio/robocon-2024-autonomous-grain-collection-robot/
 header:
-  overlay_image: "projects/robocon-2024-grain-hero.jpeg"
-  overlay_filter: 0.35
   teaser: "projects/robocon-2024-grain-hero.jpeg"
 ---
 
