@@ -7,6 +7,7 @@ Personal academic website for **Jiahui Huan**, an M.S. student in Robotics Engin
 ## Highlights
 
 * **Featured project:** [One-Shot Demo Synthesis for Robot Imitation Learning](https://github.com/JHHuan/Demogen-simulation-project)
+* **Publication:** [RealDexUMI: A Wearable Universal Manipulation Interface for Dexterous Robot Learning](https://arxiv.org/pdf/2606.06033) — third author
 * **Website:** [jhhuan.github.io](https://jhhuan.github.io/)
 * **Contact:** [u202240850@xs.ustb.edu.cn](mailto:u202240850@xs.ustb.edu.cn)
 

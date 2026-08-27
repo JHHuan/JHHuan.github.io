@@ -72,7 +72,15 @@
     }
   ],
   "references": [],
-  "publications": [],
+  "publications": [
+    {
+      "name": "RealDexUMI: A Wearable Universal Manipulation Interface for Dexterous Robot Learning",
+      "publisher": "arXiv preprint arXiv:2606.06033",
+      "releaseDate": "2026-06-04",
+      "website": "https://arxiv.org/pdf/2606.06033",
+      "summary": "Third author. RealDexUMI is a wearable interface for collecting deployment-aligned dexterous-manipulation data, validated across eight real-robot tasks."
+    }
+  ],
   "presentations": [],
   "teaching": [],
   "portfolio": [
