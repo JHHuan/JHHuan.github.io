@@ -2,14 +2,32 @@
 layout: archive
 title: "Projects"
 permalink: /portfolio/
-author_profile: true
+author_profile: false
 ---
 
 {% include base_path %}
 
+<p class="projects-intro">Research and engineering projects in robotics and embodied AI.</p>
+
 <div class="project-list">
-{% assign projects = site.portfolio | sort: "order" | reverse %}
-{% for post in projects %}
-  {% include project-card.html %}
-{% endfor %}
+  {% assign research_projects = site.portfolio | where: "project_category", "research" | sort: "order" | reverse %}
+  {% assign competition_projects = site.portfolio | where: "project_category", "competition" | sort: "order" | reverse %}
+
+  <section class="project-section" aria-labelledby="research-projects">
+    <h2 id="research-projects" class="project-category">Research</h2>
+    <div class="project-grid">
+      {% for post in research_projects %}
+        {% include project-card.html %}
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="project-section" aria-labelledby="competition-projects">
+    <h2 id="competition-projects" class="project-category">Robotics Competition</h2>
+    <div class="project-grid">
+      {% for post in competition_projects %}
+        {% include project-card.html %}
+      {% endfor %}
+    </div>
+  </section>
 </div>
