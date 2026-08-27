@@ -45,6 +45,16 @@ Developed a data-efficient robotic manipulation pipeline using RoboPal and DemoG
 
 Project links: [project details](/portfolio/demogen-simulation-project/) · [GitHub repository](https://github.com/JHHuan/Demogen-simulation-project)
 
+## ROBOCON Competition Projects
+
+### [ROBOCON 2025: Wheel-Legged Dunking Robot](/portfolio/robocon-2025-wheel-legged-dunking-robot/)
+
+Project lead for a 1.5 m, 25 kg wheel-legged robot that combines high-speed swerve motion, jumping, ball reception, and dunking. The robot achieved a vertical jump above 40 cm and a dunking success rate above 95% in more than 100 fixed-point tests. The project received national first prizes in both the basketball competition and skills challenge, as well as the Best Technical Award.
+
+### [ROBOCON 2024: Autonomous Grain Collection and Placement Robot](/portfolio/robocon-2024-autonomous-grain-collection-robot/)
+
+Project lead for an autonomous mobile robot with a 3-DOF arm and four-swerve chassis. The system used an Intel RealSense D455 depth camera, LiDAR, and encoders for dynamic grain tracking, grasping, and accurate multi-target placement, with over 95% target-localization and grasping accuracy.
+
 ## Technical Skills
 
 * **Programming:** Python, C/C++, MATLAB

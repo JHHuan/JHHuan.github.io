@@ -7,6 +7,7 @@ Personal academic website for **Jiahui Huan**, an M.S. student in Robotics Engin
 ## Highlights
 
 * **Featured project:** [One-Shot Demo Synthesis for Robot Imitation Learning](https://github.com/JHHuan/Demogen-simulation-project)
+* **ROBOCON projects:** [2025 wheel-legged dunking robot](https://jhhuan.github.io/portfolio/robocon-2025-wheel-legged-dunking-robot/) and [2024 autonomous grain collection robot](https://jhhuan.github.io/portfolio/robocon-2024-autonomous-grain-collection-robot/)
 * **Publication:** [RealDexUMI: A Wearable Universal Manipulation Interface for Dexterous Robot Learning](https://arxiv.org/pdf/2606.06033) — third author
 * **Website:** [jhhuan.github.io](https://jhhuan.github.io/)
 * **Contact:** [u202240850@xs.ustb.edu.cn](mailto:u202240850@xs.ustb.edu.cn)

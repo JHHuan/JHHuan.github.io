@@ -85,6 +85,20 @@
   "teaching": [],
   "portfolio": [
     {
+      "name": "ROBOCON 2025: Wheel-Legged Dunking Robot",
+      "category": "Project lead · robotics competition",
+      "date": "2025",
+      "description": "Led the design and iteration of a 1.5 m wheel-legged dunking robot. Developed SLIP-based jump planning and VMC-based landing control; the robot achieved a 40 cm vertical jump and over 95% dunking success in 100+ fixed-point tests.",
+      "url": "https://jhhuan.github.io/portfolio/robocon-2025-wheel-legged-dunking-robot/"
+    },
+    {
+      "name": "ROBOCON 2024: Autonomous Grain Collection and Placement Robot",
+      "category": "Project lead · robotics competition",
+      "date": "2024",
+      "description": "Led end-to-end development of an autonomous grain-tracking, grasping, and placement robot with a 3-DOF arm, four-swerve chassis, depth camera, LiDAR, and encoders.",
+      "url": "https://jhhuan.github.io/portfolio/robocon-2024-autonomous-grain-collection-robot/"
+    },
+    {
       "name": "One-Shot Demo Synthesis for Robot Imitation Learning",
       "category": "Robotics research project",
       "description": "A data-efficient robotic manipulation system that synthesizes demonstrations from one teleoperated example and trains 3D Diffusion Policy models for simulated and real-robot deployment.",
