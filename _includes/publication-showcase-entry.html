@@ -1,0 +1,28 @@
+{% include base_path %}
+
+{% assign publication_url = post.url | prepend: base_path %}
+{% assign paper_url = post.paperurl | default: publication_url %}
+{% assign publication_label = post.abbr | default: post.venue | default: "Preprint" %}
+
+<article class="publication-showcase__entry" itemscope itemtype="https://schema.org/ScholarlyArticle">
+  <a class="publication-showcase__cover" href="{{ paper_url }}"{% if post.paperurl %} target="_blank" rel="noopener"{% endif %} aria-label="Open {{ post.title | strip_html | escape }}">
+    <span class="publication-showcase__cover-label">{{ publication_label }}</span>
+    <span class="publication-showcase__cover-title">{{ post.title | split: ":" | first }}</span>
+    <span class="publication-showcase__cover-year">{{ post.date | date: "%Y" }}</span>
+  </a>
+
+  <div class="publication-showcase__content">
+    <p class="publication-showcase__meta">{{ publication_label }} · {{ post.date | date: "%Y" }}</p>
+    <h2 class="publication-showcase__title" itemprop="headline"><a href="{{ paper_url }}"{% if post.paperurl %} target="_blank" rel="noopener"{% endif %}>{{ post.title }}</a></h2>
+    {% if post.authors %}
+      <p class="publication-showcase__authors" itemprop="author">{{ post.authors }}</p>
+    {% endif %}
+    {% if post.excerpt %}
+      <p class="publication-showcase__abstract" itemprop="description">{{ post.excerpt }}</p>
+    {% endif %}
+    <div class="publication-showcase__links">
+      {% if post.paperurl %}<a href="{{ post.paperurl }}" target="_blank" rel="noopener">PDF</a>{% endif %}
+      <a href="{{ publication_url }}">Details</a>
+    </div>
+  </div>
+</article>

@@ -162,6 +162,176 @@ html[data-theme="dark"] .masthead {
   line-height: 1.55;
 }
 
+/* Publications: compact paper cards inspired by a research-profile bibliography. */
+.publication-showcase {
+  max-width: 980px;
+}
+
+.publication-showcase__list {
+  padding-left: 2.1rem;
+  margin: 0;
+}
+
+.publication-showcase__item {
+  padding-left: 0.45rem;
+  margin: 0 0 2.2rem;
+}
+
+.publication-showcase__item::marker {
+  color: var(--accent-teal);
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.publication-showcase__entry {
+  display: grid;
+  grid-template-columns: minmax(185px, 28%) minmax(0, 1fr);
+  gap: 1.55rem;
+  align-items: start;
+}
+
+.publication-showcase__cover {
+  position: relative;
+  display: flex;
+  min-height: 166px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.05rem;
+  color: #fff !important;
+  text-decoration: none !important;
+  background:
+    radial-gradient(circle at 90% 20%, rgba(255, 255, 255, 0.38) 0 7%, transparent 7.5%),
+    radial-gradient(circle at 70% 82%, rgba(86, 220, 221, 0.54) 0 14%, transparent 14.5%),
+    linear-gradient(135deg, #083a58, #007c91 58%, #2563eb);
+  border-radius: 8px;
+  box-shadow: 0 8px 18px rgba(15, 53, 70, 0.14);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.publication-showcase__cover::after {
+  position: absolute;
+  right: -12%;
+  bottom: -52%;
+  width: 88%;
+  aspect-ratio: 1;
+  content: "";
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+}
+
+.publication-showcase__cover:hover {
+  box-shadow: 0 13px 24px rgba(15, 53, 70, 0.22);
+  transform: translateY(-3px);
+}
+
+.publication-showcase__cover-label,
+.publication-showcase__cover-year,
+.publication-showcase__cover-title {
+  position: relative;
+  z-index: 1;
+}
+
+.publication-showcase__cover-label {
+  width: fit-content;
+  padding: 0.18rem 0.42rem;
+  font-size: 0.67rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 999px;
+}
+
+.publication-showcase__cover-title {
+  max-width: 78%;
+  font-size: clamp(1.35rem, 2.2vw, 1.8rem);
+  font-weight: 850;
+  line-height: 0.95;
+  letter-spacing: -0.055em;
+}
+
+.publication-showcase__cover-year {
+  font-size: 0.78rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+}
+
+.publication-showcase__content {
+  padding: 0.05rem 0;
+}
+
+.publication-showcase__meta {
+  margin: 0 0 0.45rem;
+  color: var(--accent-orange);
+  font-size: 0.78rem !important;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.publication-showcase__title {
+  padding: 0 !important;
+  margin: 0 !important;
+  color: var(--global-text-color) !important;
+  font-size: clamp(1.2rem, 2.25vw, 1.55rem) !important;
+  font-weight: 800 !important;
+  line-height: 1.32;
+}
+
+.publication-showcase__title::after {
+  display: none;
+}
+
+.publication-showcase__title a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.publication-showcase__title a:hover {
+  color: var(--accent-teal) !important;
+}
+
+.publication-showcase__authors,
+.publication-showcase__abstract {
+  margin: 0.55rem 0 0;
+  font-size: 0.96rem !important;
+  line-height: 1.65;
+}
+
+.publication-showcase__authors strong {
+  color: var(--accent-teal);
+  font-weight: 850;
+}
+
+.publication-showcase__abstract {
+  color: var(--global-text-color-light);
+}
+
+.publication-showcase__links {
+  display: flex;
+  gap: 0.65rem;
+  margin-top: 0.85rem;
+}
+
+.publication-showcase__links a {
+  padding: 0.27rem 0.64rem;
+  color: var(--accent-teal) !important;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-decoration: none !important;
+  border: 1px solid rgba(0, 124, 145, 0.42);
+  border-radius: 4px;
+}
+
+.publication-showcase__links a:hover {
+  color: #fff !important;
+  background: var(--accent-teal);
+  border-color: var(--accent-teal);
+}
+
 .project-list {
   display: grid;
   gap: 1.35rem;
@@ -336,6 +506,23 @@ html[data-theme="dark"] .masthead {
 
   .page__hero--overlay {
     border-radius: 0;
+  }
+
+  .publication-showcase__list {
+    padding-left: 1.65rem;
+  }
+
+  .publication-showcase__item {
+    padding-left: 0.15rem;
+  }
+
+  .publication-showcase__entry {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .publication-showcase__cover {
+    min-height: 175px;
   }
 
   .project-card {
