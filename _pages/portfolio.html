@@ -1,13 +1,15 @@
 ---
 layout: archive
-title: "Selected Projects"
+title: "Projects"
 permalink: /portfolio/
 author_profile: true
 ---
 
 {% include base_path %}
 
-
-{% for post in site.portfolio %}
-  {% include archive-single.html type="grid" %}
+<div class="project-list">
+{% assign projects = site.portfolio | sort: "order" | reverse %}
+{% for post in projects %}
+  {% include project-card.html %}
 {% endfor %}
+</div>

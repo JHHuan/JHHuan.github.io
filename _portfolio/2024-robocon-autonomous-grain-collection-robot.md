@@ -2,6 +2,7 @@
 title: "Autonomous Grain Collection and Placement Robot (2024)"
 excerpt: "Project lead for an autonomous grain-tracking, grasping, and placement robot with a 3-DOF arm, four-swerve chassis, Intel RealSense D455 depth camera, LiDAR, and encoders."
 collection: portfolio
+order: 20
 permalink: /portfolio/robocon-2024-autonomous-grain-collection-robot/
 header:
   teaser: "projects/robocon-2024-grain-hero.jpeg"
