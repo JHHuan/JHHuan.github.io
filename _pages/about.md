@@ -33,7 +33,7 @@ You can find a structured overview of my background on my [CV](/cv/) and a detai
 
    *arXiv preprint arXiv:2606.06033, 2026.* [Paper PDF](https://arxiv.org/pdf/2606.06033)
 
-## Selected Project
+## Project
 
 ### [One-Shot Demo Synthesis for Robot Imitation Learning](/portfolio/demogen-simulation-project/)
 
@@ -44,8 +44,6 @@ Developed a data-efficient robotic manipulation pipeline using RoboPal and DemoG
 * Validated direct sim-to-real deployment on a real FR3 robot with a Linker Hand O6 dexterous hand.
 
 Project links: [project details](/portfolio/demogen-simulation-project/) · [GitHub repository](https://github.com/JHHuan/Demogen-simulation-project)
-
-## ROBOCON Competition Projects
 
 ### [Wheel-Legged Dunking Robot (2025)](/portfolio/robocon-2025-wheel-legged-dunking-robot/)
 
