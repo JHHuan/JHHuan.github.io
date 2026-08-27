@@ -1,7 +1,25 @@
-# Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
+# Jiahui Huan — Academic Website
 
-![Academic Pages template example](images/themes/homepage-light.png "Academic Pages template example")
+[![Website](https://img.shields.io/badge/website-jhhuan.github.io-0366d6)](https://jhhuan.github.io/)
+
+Personal academic website for **Jiahui Huan**, an M.S. student in Robotics Engineering at Beijing Institute of Technology. My interests include robotic manipulation, imitation learning, 3D vision, and data-efficient robot learning.
+
+## Highlights
+
+* **Featured project:** [One-Shot Demo Synthesis for Robot Imitation Learning](https://github.com/JHHuan/Demogen-simulation-project)
+* **Website:** [jhhuan.github.io](https://jhhuan.github.io/)
+* **Contact:** [u202240850@xs.ustb.edu.cn](mailto:u202240850@xs.ustb.edu.cn)
+
+## Update content
+
+* Homepage: `_pages/about.md`
+* CV: `_data/cv.json`
+* Navigation: `_data/navigation.yml`
+* Project pages: `_portfolio/`
+
+---
+
+# Academic Pages
 
 # Getting Started
 

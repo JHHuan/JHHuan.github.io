@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "JHHuan / Homepage"
+title                    : "Jiahui Huan / Academic Website"
 title_separator          : "-"
 name                     : &name "Jiahui Huan"
-description              : &description "Jiahui Huan's academic portfolio - Robotics, Machine Learning, Computer Vision"
+description              : &description "Jiahui Huan's academic website — robotic manipulation, imitation learning, and 3D vision."
 url                      : https://jhhuan.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,9 +26,9 @@ author:
   avatar           : "profile.png"
   name             : "Jiahui Huan"
   pronouns         : # example: "she/her"  
-  bio              : "Undergraduate student interested in robotic manipulation and imitation learning."
+  bio              : "M.S. student in Robotics Engineering, interested in robotic manipulation and imitation learning."
   location         : "Beijing, China"
-  employer         : 
+  employer         : "Beijing Institute of Technology"
   uri              : # URL
   email            : "u202240850@xs.ustb.edu.cn" 
 
