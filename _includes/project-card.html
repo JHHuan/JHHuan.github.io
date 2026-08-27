@@ -2,12 +2,39 @@
 
 {% assign project_url = post.url | prepend: base_path %}
 
+{% if post.header.video %}
+  {% if post.header.video contains "://" %}
+    {% assign media_src = post.header.video %}
+  {% else %}
+    {% assign media_src = post.header.video | prepend: "/" | prepend: base_path %}
+  {% endif %}
+{% elsif post.header.teaser %}
+  {% if post.header.teaser contains "://" %}
+    {% assign media_src = post.header.teaser %}
+  {% else %}
+    {% assign media_src = post.header.teaser | prepend: "/images/" | prepend: base_path %}
+  {% endif %}
+{% endif %}
+
 <article class="project-card" itemscope itemtype="https://schema.org/CreativeWork">
-  <a class="project-card__link" href="{{ project_url }}" aria-label="View {{ post.title | strip_html | escape }}">
-    <h3 class="project-card__title" itemprop="headline">{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}</h3>
+  <a class="project-card__media" href="{{ project_url }}" aria-label="View {{ post.title | strip_html | escape }}">
+    {% if post.header.video %}
+      <video autoplay muted loop playsinline preload="metadata">
+        <source src="{{ media_src }}" type="video/mp4">
+      </video>
+    {% elsif post.header.teaser %}
+      <img src="{{ media_src }}" alt="{{ post.title | strip_html | escape }}" loading="lazy">
+    {% else %}
+      <span class="project-card__fallback">Robotics Project</span>
+    {% endif %}
+  </a>
+
+  <div class="project-card__body">
+    <p class="project-card__label">PROJECT</p>
+    <h2 class="project-card__title" itemprop="headline"><a href="{{ project_url }}">{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}</a></h2>
     {% if post.excerpt %}
       <p class="project-card__excerpt" itemprop="description">{{ post.excerpt | markdownify | remove: "<p>" | remove: "</p>" }}</p>
     {% endif %}
-    <span class="project-card__action">View project <span aria-hidden="true">→</span></span>
-  </a>
+    <a class="project-card__link" href="{{ project_url }}">View project <span aria-hidden="true">→</span></a>
+  </div>
 </article>

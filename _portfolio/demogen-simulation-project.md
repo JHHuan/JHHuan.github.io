@@ -2,7 +2,6 @@
 title: "One-Shot Demo Synthesis for Robot Imitation Learning"
 excerpt: "A data-efficient robotic manipulation system using DemoGen for synthetic demonstration generation, training 3D Diffusion Policy (DP3) models deployable on both simulation and real Franka Panda robots with minimal human data."
 collection: portfolio
-project_category: research
 order: 10
 header:
   teaser: "sim_assembly.gif"
