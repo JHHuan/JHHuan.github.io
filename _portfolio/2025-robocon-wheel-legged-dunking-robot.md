@@ -1,8 +1,11 @@
 ---
-title: "ROBOCON 2025: Wheel-Legged Dunking Robot"
+title: "Wheel-Legged Dunking Robot (2025)"
 excerpt: "Project lead for a 1.5 m wheel-legged robot that combines high-speed swerve motion, jumping, ball reception, and dunking. Achieved a 40 cm vertical jump and over 95% dunking success in 100+ fixed-point tests."
 collection: portfolio
+permalink: /portfolio/robocon-2025-wheel-legged-dunking-robot/
 header:
+  overlay_image: "projects/robocon-2025-dunking-hero.png"
+  overlay_filter: 0.35
   teaser: "projects/robocon-2025-dunking-hero.png"
 ---
 

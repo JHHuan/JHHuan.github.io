@@ -1,0 +1,196 @@
+/* ========================================================================== 
+   PERSONAL SITE REFINEMENTS
+   ========================================================================== */
+
+:root {
+  --accent-teal: #007c91;
+  --accent-blue: #2563eb;
+  --accent-orange: #e9692c;
+  --surface-card: rgba(255, 255, 255, 0.9);
+  --surface-muted: #f1f7f8;
+  --card-shadow: 0 14px 32px rgba(15, 53, 70, 0.12);
+}
+
+html[data-theme="dark"] {
+  --surface-card: rgba(56, 64, 68, 0.94);
+  --surface-muted: #3d474b;
+  --card-shadow: 0 14px 32px rgba(0, 0, 0, 0.28);
+}
+
+body {
+  background-image:
+    radial-gradient(circle at 95% 0, rgba(37, 99, 235, 0.11), transparent 25rem),
+    radial-gradient(circle at 0 30%, rgba(0, 124, 145, 0.08), transparent 22rem);
+  font-family: "Avenir Next", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6,
+.masthead,
+.author__name {
+  font-family: "Avenir Next", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+.masthead {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 1px 0 rgba(15, 53, 70, 0.08);
+}
+
+html[data-theme="dark"] .masthead {
+  background: rgba(55, 55, 55, 0.9);
+}
+
+.masthead__menu-item {
+  background: transparent;
+}
+
+.masthead__menu-item--lg a {
+  color: var(--accent-teal);
+  letter-spacing: 0.01em;
+}
+
+.masthead__menu-item.selected a,
+.masthead__menu-item.selected a:hover {
+  color: var(--accent-teal);
+  border-bottom-color: var(--accent-orange);
+}
+
+.page__title {
+  color: var(--accent-teal);
+  font-size: clamp(2rem, 4vw, 3.15rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+}
+
+.page__content > p:first-of-type {
+  color: var(--global-text-color);
+  font-size: 1.12em;
+  line-height: 1.8;
+}
+
+.page__content h2 {
+  position: relative;
+  padding-bottom: 0.55rem;
+  border-bottom: 0;
+  color: var(--accent-teal);
+  font-weight: 800;
+}
+
+.page__content h2::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 3.2rem;
+  height: 3px;
+  content: "";
+  background: linear-gradient(90deg, var(--accent-teal), var(--accent-blue));
+  border-radius: 99px;
+}
+
+.page__content h3 {
+  color: var(--accent-orange);
+  font-weight: 750;
+}
+
+.page__content a {
+  color: var(--accent-teal);
+  text-decoration-color: rgba(0, 124, 145, 0.35);
+  text-underline-offset: 0.16em;
+}
+
+.page__content a:hover {
+  color: var(--accent-orange);
+  text-decoration-color: currentColor;
+}
+
+.author__avatar img {
+  border: 3px solid rgba(0, 124, 145, 0.24);
+  box-shadow: 0 10px 24px rgba(15, 53, 70, 0.14);
+}
+
+.author__bio {
+  color: var(--accent-teal);
+  font-weight: 600;
+}
+
+.grid__item {
+  display: flex;
+}
+
+.grid__item .archive__item {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 0 1.15rem 1.2rem;
+  background: var(--surface-card);
+  border: 1px solid rgba(0, 124, 145, 0.12);
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(15, 53, 70, 0.07);
+  overflow: hidden;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.grid__item .archive__item:hover {
+  border-color: rgba(0, 124, 145, 0.3);
+  box-shadow: var(--card-shadow);
+  transform: translateY(-5px);
+}
+
+.grid__item .archive__item-teaser {
+  height: 185px;
+  margin: 0 -1.15rem 1rem;
+  border-radius: 0;
+  background: var(--surface-muted);
+}
+
+.grid__item .archive__item-teaser img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid__item .archive__item-title {
+  margin-top: 0;
+  color: var(--accent-teal);
+  font-weight: 750;
+  line-height: 1.25;
+}
+
+.grid__item .archive__item-excerpt {
+  color: var(--global-text-color);
+  line-height: 1.55;
+}
+
+.robocon-gallery {
+  padding: 1rem;
+  background: var(--surface-muted);
+  border: 1px solid rgba(0, 124, 145, 0.1);
+  border-radius: 14px;
+}
+
+.robocon-gallery img {
+  box-shadow: 0 8px 18px rgba(15, 53, 70, 0.12);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.robocon-gallery img:hover {
+  box-shadow: var(--card-shadow);
+  transform: scale(1.015);
+}
+
+.page__hero--overlay {
+  margin-left: -1rem;
+  margin-right: -1rem;
+  border-radius: 0 0 18px 18px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .grid__item .archive__item-teaser {
+    height: 205px;
+  }
+
+  .page__hero--overlay {
+    border-radius: 0;
+  }
+}
