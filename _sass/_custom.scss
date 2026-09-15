@@ -502,6 +502,41 @@ html[data-theme="dark"] .masthead {
   line-height: 1.45;
 }
 
+.hug-video-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  background: var(--surface-muted);
+  border: 1px solid rgba(0, 124, 145, 0.1);
+  border-radius: 14px;
+}
+
+.hug-video-gallery figure {
+  margin: 0;
+}
+
+.hug-video-gallery__wide {
+  grid-column: 1 / -1;
+}
+
+.hug-video-gallery video {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #111;
+  border-radius: 8px;
+  box-shadow: 0 8px 18px rgba(15, 53, 70, 0.12);
+}
+
+.hug-video-gallery figcaption {
+  margin-top: 0.55rem;
+  color: var(--global-fig-caption-color);
+  font-size: 0.9em;
+  line-height: 1.45;
+}
+
 .page__hero--overlay {
   margin-left: -1rem;
   margin-right: -1rem;
@@ -558,5 +593,13 @@ html[data-theme="dark"] .masthead {
 
   .robocon-video-grid figure:last-child {
     width: 100%;
+  }
+
+  .hug-video-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .hug-video-gallery__wide {
+    grid-column: auto;
   }
 }

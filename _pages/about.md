@@ -35,6 +35,16 @@ You can find a structured overview of my background on my [CV](/cv/) and a detai
 
 ## Project
 
+### [HUG-Driven Dexterous Grasping and VLA Simulation Pipeline](/portfolio/hug-dexterous-grasping-vla-pipeline/)
+
+Built an end-to-end dexterous-grasping pipeline that adapts pretrained HUG grasp generation to a Panda + O6Hand MuJoCo environment, then turns successful demonstrations into trainable robot-learning data.
+
+* Retargeted HUG-generated MANO grasps to the O6Hand's 6-D control space and designed staged tabletop-grasp execution.
+* Built an automated LeRobot v3 collection pipeline with target/distractor randomization, language tasks, and dual third-person camera observations.
+* Trained and evaluated ACT and SmolVLA policies in a matched closed-loop simulation deployment environment.
+
+Project link: [project details and rollout videos](/portfolio/hug-dexterous-grasping-vla-pipeline/)
+
 ### [One-Shot Demo Synthesis for Robot Imitation Learning](/portfolio/demogen-simulation-project/)
 
 Developed a data-efficient robotic manipulation pipeline using RoboPal and DemoGen to synthesize demonstrations from one teleoperated example and train 3D Diffusion Policy (DP3) models from point-cloud observations.
