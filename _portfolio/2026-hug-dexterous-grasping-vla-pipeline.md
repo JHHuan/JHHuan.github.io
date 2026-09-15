@@ -21,14 +21,14 @@ This personal project turns pretrained **HUG (Human Universal Grasping)** predic
 
 ## Data and Evaluation Setup
 
-The collection setup uses two fixed third-person RGB views (`640 × 360`, 30 FPS) to avoid hand occlusion and camera interpenetration. A representative banana-grasp configuration includes randomized target and distractor placement, natural-language task conditioning, and 100 retained successful episodes (about 18,800 frames).
+The collection setup uses two fixed third-person RGB views (`640 × 360`, 30 FPS) to avoid hand occlusion and camera interpenetration. The ACT policy was trained with 25 retained successful banana-grasp demonstrations; the environment supports randomized target and distractor placement together with natural-language task conditioning.
 
 Recorded evaluations use a success criterion of lifting the banana by at least 5 cm:
 
-| Policy | Recorded setting | Result |
+| Policy | Training / recorded evaluation setting | Result |
 | --- | --- | --- |
-| ACT | 3 banana-grasp rollout episodes | 3 / 3 successful lifts; mean final lift: 0.210 m |
-| SmolVLA | 5 language-conditioned, dual-view rollout episodes with distractors | 2 / 5 successful lifts; mean final lift: 0.111 m |
+| ACT | 25 training demonstrations; 100 banana-grasp evaluation episodes | **74 / 100 successful lifts (74%)** |
+| SmolVLA | 50 training demonstrations; 100 language-conditioned, dual-view evaluation episodes with distractors | **60 / 100 successful lifts (60%)** |
 
 These runs document each policy's recorded evaluation setting and are not intended as a controlled comparison between ACT and SmolVLA.
 
